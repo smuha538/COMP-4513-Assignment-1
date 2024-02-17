@@ -1,5 +1,5 @@
 # COMP-4513-Assignment-1
-Links to API:(`<br>`)
+Links to API:<br />
 https://lucky-clean-ogre.glitch.me/api/seasons
 https://lucky-clean-ogre.glitch.me/api/circuits
 https://lucky-clean-ogre.glitch.me/api/circuits/monza
