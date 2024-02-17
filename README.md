@@ -6,14 +6,12 @@ https://lucky-clean-ogre.glitch.me/api/circuits/monza <br />
 https://lucky-clean-ogre.glitch.me/api/circuits/calgary <br />
 https://lucky-clean-ogre.glitch.me/api/constructors <br />
 https://lucky-clean-ogre.glitch.me/api/constructors/ferrari <br />
-https://lucky-clean-ogre.glitch.me/api/constructors/season/2020 <br />
 https://lucky-clean-ogre.glitch.me/api/drivers <br />
 https://lucky-clean-ogre.glitch.me/api/drivers/Norris <br />
 https://lucky-clean-ogre.glitch.me/api/drivers/norris <br />
 https://lucky-clean-ogre.glitch.me/api/drivers/connolly <br />
 https://lucky-clean-ogre.glitch.me/api/drivers/search/sch <br />
 https://lucky-clean-ogre.glitch.me/api/drivers/search/xxxxx <br />
-https://lucky-clean-ogre.glitch.me/api/drivers/season/2022 <br />
 https://lucky-clean-ogre.glitch.me/api/drivers/race/1069 <br />
 https://lucky-clean-ogre.glitch.me/api/races/1034 <br />
 https://lucky-clean-ogre.glitch.me/api/races/season/2021 <br />
