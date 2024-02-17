@@ -39,7 +39,7 @@ app.get('/api/circuits/:ref', async (req, res) => {
     .eq('circuitRef', req.params.ref);
     if (error)
     {
-        res.send(error);
+        res.json({ Error_message: 'Reference must be a string' });
         return;
     }
     else if (data.length == 0)
@@ -59,7 +59,7 @@ app.get('/api/circuits/season/:year', async (req, res) => {
     .order('round', {referencedTable: 'races', ascending: true });
     if (error)
     {
-        res.send(error);
+        res.json({ Error_message: 'Reference must be a number' });
         return;
     }
     else if (data.length == 0)
@@ -123,7 +123,7 @@ app.get('/api/drivers/:ref', async (req, res) => {
     .eq('driverRef', req.params.ref);
     if (error)
     {
-        res.send(error);
+        res.json({ Error_message: 'Reference must be a string' });
         return;
     }
     else if (data.length == 0)
@@ -142,7 +142,7 @@ app.get('/api/drivers/search/:substring', async (req, res) => {
     .ilike('surname', req.params.substring+'%');
     if (error)
     {
-        res.send(error);
+        res.json({ Error_message: 'Reference must be a string' });
         return;
     }
     else if (data.length == 0)
@@ -161,7 +161,7 @@ app.get('/api/drivers/race/:raceId', async (req, res) => {
     .eq('driverStandings.raceId', req.params.raceId);
     if (error)
     {
-        res.send(error);
+        res.json({ Error_message: 'Reference must be a number' });
         return;
     }
     else if (data.length == 0)
@@ -181,7 +181,7 @@ app.get('/api/races/:raceId', async (req, res) => {
     .eq('raceId',req.params.raceId);
     if (error)
     {
-        res.send(error);
+        res.json({ Error_message: 'Reference must be a number' });
         return;
     }
     else if (data.length == 0)
@@ -201,7 +201,7 @@ app.get('/api/races/season/:year', async (req, res) => {
     .order('round', { ascending: true });
     if (error)
     {
-        res.send(error);
+        res.json({ Error_message: 'Year must be a number' });
         return;
     }
     else if (data.length == 0)
@@ -241,7 +241,7 @@ app.get('/api/races/circuits/:ref', async (req, res) => {
     .order('year', {ascending: true});
     if (error)
     {
-        res.send(error);
+        res.json({ Error_message: 'Reference must be a string' });
         return;
     }
     else if (data.length == 0)
@@ -288,7 +288,7 @@ app.get('/api/results/:raceId', async (req, res) => {
     .order('grid', { ascending: true });
     if (error)
     {
-        res.send(error);
+        res.json({ Error_message: 'Reference must be a number' });
         return;
     }
     else if (data.length == 0)
@@ -307,7 +307,7 @@ app.get('/api/results/driver/:ref', async (req, res) => {
     .eq('drivers.driverRef',req.params.ref);
     if (error)
     {
-        res.send(error);
+        res.json({ Error_message: 'Reference must be a string' });
         return;
     }
     else if (data.length == 0)
@@ -353,7 +353,7 @@ app.get('/api/qualifying/:raceId', async (req, res) => {
     .order('position', { ascending: true });
     if (error)
     {
-        res.send(error);
+        res.json({ Error_message: 'Reference must be a number' });
         return;
     }
     else if (data.length == 0)
@@ -374,7 +374,7 @@ app.get('/api/standings/drivers/:raceId', async (req, res) => {
     .order('position', { ascending: true });
     if (error)
     {
-        res.send(error);
+        res.json({ Error_message: 'Reference must be a number' });
         return;
     }
     else if (data.length == 0)
@@ -394,8 +394,8 @@ app.get('/api/standings/constructors/:raceId', async (req, res) => {
     `).eq('raceId',req.params.raceId)
     .order('position', { ascending: true });
     if (error)
-    {
-        res.send(error);
+    { 
+        res.json({ Error_message: 'Reference must be a number' });
         return;
     }
     else if (data.length == 0)
