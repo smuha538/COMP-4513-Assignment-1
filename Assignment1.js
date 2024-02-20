@@ -120,7 +120,7 @@ app.get('/api/drivers/:ref', async (req, res) => {
     const {data, error} = await supabase
     .from('drivers')
     .select()
-    .eq('driverRef', req.params.ref);
+    .ilike('driverRef', req.params.ref);
     if (error)
     {
         res.json({ Error_message: 'Reference must be a string' });
