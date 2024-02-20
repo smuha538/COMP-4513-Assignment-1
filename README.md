@@ -15,7 +15,6 @@ https://lucky-clean-ogre.glitch.me/api/drivers/search/xxxxx <br />
 https://lucky-clean-ogre.glitch.me/api/drivers/race/1069 <br />
 https://lucky-clean-ogre.glitch.me/api/races/1034 <br />
 https://lucky-clean-ogre.glitch.me/api/races/season/2021 <br />
-https://lucky-clean-ogre.glitch.me/api/races/season/2020/2022 <br />
 https://lucky-clean-ogre.glitch.me/api/races/season/2022/4 <br />
 https://lucky-clean-ogre.glitch.me/api/races/circuits/monza <br />
 https://lucky-clean-ogre.glitch.me/api/races/circuits/monza/season/2015/2022 <br />
