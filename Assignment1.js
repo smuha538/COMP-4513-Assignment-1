@@ -319,7 +319,7 @@ app.get('/api/results/driver/:ref', async (req, res) => {
     });
 
 //Returns all the results for a given driver between two years
-app.get('/api/results/drivers/:ref/seasons/:start/:end', async (req, res) => {
+app.get('/api/results/driver/:ref/seasons/:start/:end', async (req, res) => {
     const {data, error} = await supabase
     .from('results')
     .select('*, drivers!inner(), races!inner()')
@@ -365,7 +365,7 @@ app.get('/api/qualifying/:raceId', async (req, res) => {
     });
 
 //Returns the current season driver standings table for the specified race (ascending order of 'position')
-app.get('/api/standings/drivers/:raceId', async (req, res) => {
+app.get('/api/standings/:raceId/drivers', async (req, res) => {
     const {data, error} = await supabase
     .from('driverStandings')
     .select(`
@@ -386,7 +386,7 @@ app.get('/api/standings/drivers/:raceId', async (req, res) => {
     });
 
 //Returns the current season constructors standings table for the specified race (ascending order of 'position')
-app.get('/api/standings/constructors/:raceId', async (req, res) => {
+app.get('/api/standings/:raceId/constructors', async (req, res) => {
     const {data, error} = await supabase
     .from('constructorStandings')
     .select(`
